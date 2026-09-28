@@ -1,0 +1,6 @@
+---
+- name: copy tomcat-user.xml file to /opt/tomcat/conf
+  template:
+    src: tomcat-user.xml
+    dest: /opt/tomcat/conf/tomcat-users.xml
+    
