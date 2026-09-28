@@ -12,3 +12,6 @@
     path: /opt/tomcat/bin
     owner: tomcat
     group: "{{mytomcatgroup}}"
+    mode: '0755'
+    state: directory
+    recurse: yes
