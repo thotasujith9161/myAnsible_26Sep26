@@ -1,0 +1,13 @@
+---
+- name: create tomcat group
+  ansible.builtin.group:
+    name: "{{mytomcatgroup}}"
+    state: present
+    
+- name: create tomcat user  
+  ansible.builtin.user:
+    name: tomcat
+    group: "{{mytomcatgroup}}"
+    shell: /bin/false
+    home: /opt/tomcat
+    state: present 

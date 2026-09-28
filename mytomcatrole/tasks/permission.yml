@@ -1,0 +1,14 @@
+---
+- name: set chown -r mode on tomcat folder
+  ansible.builtin.file:
+    path: /opt/tomcat
+    owner: tomcat
+    group: "{{mytomcatgroup}}"
+    state: directory
+    recurse: yes
+
+- name: set chown +x on tomcat bin folder
+  ansible.builtin.file:
+    path: /opt/tomcat/bin
+    owner: tomcat
+    group: "{{mytomcatgroup}}"

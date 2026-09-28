@@ -1,0 +1,11 @@
+---
+- name: update apache2 package
+  apt:
+    update_apache2: yes
+    
+- name: install java
+  apt:
+    name: "{{myjavapackage}}"
+    state: present
+  
+    
