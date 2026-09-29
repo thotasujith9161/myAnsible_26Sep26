@@ -8,3 +8,4 @@
 - include_tasks: tomcatservice.yml
 - include_tasks: tomcatstart.yml
 - include_tasks: tomcatconfig.yml
+- include_tasks: tomcatrestart.yml
