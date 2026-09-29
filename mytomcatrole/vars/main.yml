@@ -4,3 +4,4 @@
 myjavapackage: openjdk-21-jdk
 mytomcaturl: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.60/bin/apache-tomcat-10.1.60.tar.gz 
 mytomcatgroup: tomcat
+mysqlpasswd: maha123!
